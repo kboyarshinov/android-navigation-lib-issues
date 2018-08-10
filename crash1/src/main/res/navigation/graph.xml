@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@+id/destination_fragmentA">
+    <fragment
+        android:id="@+id/destination_fragmentA"
+        android:name="bugs.aacnav.crash1.FragmentA"
+        android:label="FragmentA">
+        <action
+            android:id="@+id/to_fragment_b"
+            app:destination="@id/destination_fragmentB" />
+
+        <action
+            android:id="@+id/to_fragment_c"
+            app:destination="@id/destination_fragmentC" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_fragmentB"
+        android:name="bugs.aacnav.crash1.FragmentB"
+        android:label="FragmentB">
+
+        <action
+            android:id="@+id/to_fragment_c"
+            app:destination="@id/destination_fragmentC"
+            app:popUpTo="@id/destination_fragmentA" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_fragmentC"
+        android:name="bugs.aacnav.crash1.FragmentC"
+        android:label="FragmentC"/>
+</navigation>
