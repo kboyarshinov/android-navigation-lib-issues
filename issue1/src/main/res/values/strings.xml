@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Deeplink nav issue</string>
+    <string name="deeplink">https://example.com/deeplink</string>
+</resources>

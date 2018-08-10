@@ -1,1 +1,2 @@
-include ':crash1'
+include ':crash1',
+        ':issue1'

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@+id/destination_fragmentA">
+    <fragment
+        android:id="@+id/destination_fragmentA"
+        android:name="bugs.aacnav.issue1.FragmentA"
+        android:label="FragmentA"/>
+
+    <fragment
+        android:id="@+id/destination_fragment_deep_link"
+        android:name="bugs.aacnav.issue1.FragmentDeepLink"
+        android:label="FragmentDeepLink">
+
+        <deepLink app:uri="@string/deeplink"/>
+    </fragment>
+
+
+</navigation>
