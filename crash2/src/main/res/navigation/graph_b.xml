@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/destination_fragmentB"
+    app:startDestination="@+id/fragmentB">
+
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="bugs.aacnav.crash2.FragmentB"
+        android:label="FragmentB">
+        <action
+            android:id="@+id/to_fragment_c"
+            app:destination="@id/destination_fragmentC"
+            />
+    </fragment>
+
+</navigation>

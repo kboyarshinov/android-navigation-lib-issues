@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/destination_fragmentC"
+    app:startDestination="@+id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="bugs.aacnav.crash2.FragmentA"
+        android:label="Fragment1">
+        <action
+            android:id="@+id/to_fragment_2"
+            app:destination="@id/fragment2"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="bugs.aacnav.crash2.FragmentA"
+        android:label="Fragment2">
+        <action
+            android:id="@+id/to_fragment_c"
+            app:destination="@id/fragmentC"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="bugs.aacnav.crash2.FragmentDeepLink"
+        android:label="FragmentDeepLink">
+        <deepLink app:uri="test.navcrash2.com/deeplink/{param1}"/>
+    </fragment>
+
+</navigation>

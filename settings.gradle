@@ -1,2 +1,3 @@
 include ':crash1',
+        ':crash2'
         ':issue1'

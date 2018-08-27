@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@+id/fragmentA">
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="bugs.aacnav.crash2.FragmentA"
+        android:label="FragmentA">
+        <action
+            android:id="@+id/to_fragment_b"
+            app:destination="@id/destination_fragmentB"
+            app:popUpTo="@id/fragmentA"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <include app:graph="@navigation/graph_b" />
+    <include app:graph="@navigation/graph_c" />
+</navigation>
