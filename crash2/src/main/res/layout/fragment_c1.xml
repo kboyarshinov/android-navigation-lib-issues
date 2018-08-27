@@ -2,14 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="bugs.aacnav.crash2.FragmentB">
+    tools:context="bugs.aacnav.crash2.FragmentC1">
 
     <Button
-        android:id="@+id/next_c_button"
+        android:id="@+id/next_c2_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="To Fragment C" />
+        android:text="To Fragment C2" />
 
 
 </FrameLayout>

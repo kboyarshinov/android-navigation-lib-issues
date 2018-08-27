@@ -6,8 +6,8 @@
 
     <fragment
         android:id="@+id/fragment1"
-        android:name="bugs.aacnav.crash2.FragmentA"
-        android:label="Fragment1">
+        android:name="bugs.aacnav.crash2.FragmentC1"
+        android:label="FragmentC1">
         <action
             android:id="@+id/to_fragment_2"
             app:destination="@id/fragment2"
@@ -16,8 +16,8 @@
 
     <fragment
         android:id="@+id/fragment2"
-        android:name="bugs.aacnav.crash2.FragmentA"
-        android:label="Fragment2">
+        android:name="bugs.aacnav.crash2.FragmentC2"
+        android:label="FragmentC2">
         <action
             android:id="@+id/to_fragment_c"
             app:destination="@id/fragmentC"

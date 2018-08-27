@@ -5,11 +5,11 @@
     tools:context="bugs.aacnav.crash2.FragmentB">
 
     <Button
-        android:id="@+id/next_c_button"
+        android:id="@+id/next_deep_link_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="To Fragment C" />
+        android:text="To Fragment Deep link" />
 
 
 </FrameLayout>
